@@ -1,0 +1,68 @@
+Scripted conversation length: 62 messages
+
+============================================================
+BEFORE / AFTER TOKEN COUNTS
+============================================================
+BEFORE (full raw history, 62 messages): 3058 tokens
+AFTER  (summary + recent, 33 messages): 2029 tokens
+Reduction: 1029 tokens (34%)
+
+Compression events: 1
+  #1: triggered at 61 live messages, folded 30 messages into summary
+
+============================================================
+CURRENT CONTEXT STATE
+============================================================
+context messages: 33  |  tokens: 2029
+  [SUMMARY] (221 tok): [Summary of 30 earlier messages]
+Key facts to remember:
+- Hey, I need some help planning a fairly involved project and I...
+  ...user: One more thing -- once this is deployed, what's a good way t
+  ...assistant: Track prediction drift and PR-AUC on a rolling weekly window
+  ...user: Okay, I've started on the feature engineering. I'm seeing a 
+
+============================================================
+FACT-RECALL VERIFICATION
+============================================================
+  [PASS] name (Priya)
+  [PASS] location (Bhavnagar)
+  [PASS] job (data scientist)
+  [PASS] deadline (August 15th)
+  [PASS] budget ($12,000)
+  [PASS] preference (dark mode)
+
+Overall: ALL KEY FACTS RETAINED after summarization.
+
+============================================================
+SIMULATED Q&A AGAINST THE COMPRESSED CONTEXT
+============================================================
+
+Q: What's my name and where do I live?
+A (found in context): [Summary of 30 earlier messages]
+Key facts to remember:
+- Hey, I need some help planning a fairly involved project and I want to walk through it in detail so we're on the same page before I start writing any code.
+- My name is Priya and I'm a data scientist based in Bhavnagar, India.
+- I'm building a churn-prediction model for a retail client using about two years of transaction logs and customer support tickets.
+- My project deadline is August 15th and the budget is $12,000 for compute, tooling, and any third-party services I might need along the way.
+- I also prefer dark mode in any dashboards or internal tools we set up, since I'll be staring at this stuff for hours at a time during the sprint.
+Topics discussed: Hey, I need some help planning...; My name is Priya and I'm...; Good question. For us it's defined...; Line-item level, so I can roll...; Leaning toward XGBoost first as a...
+
+Q: What's my project deadline and budget?
+A (found in context): [Summary of 30 earlier messages]
+Key facts to remember:
+- Hey, I need some help planning a fairly involved project and I want to walk through it in detail so we're on the same page before I start writing any code.
+- My name is Priya and I'm a data scientist based in Bhavnagar, India.
+- I'm building a churn-prediction model for a retail client using about two years of transaction logs and customer support tickets.
+- My project deadline is August 15th and the budget is $12,000 for compute, tooling, and any third-party services I might need along the way.
+- I also prefer dark mode in any dashboards or internal tools we set up, since I'll be staring at this stuff for hours at a time during the sprint.
+Topics discussed: Hey, I need some help planning...; My name is Priya and I'm...; Good question. For us it's defined...; Line-item level, so I can roll...; Leaning toward XGBoost first as a...
+
+Q: What UI preference did I mention?
+A (found in context): [Summary of 30 earlier messages]
+Key facts to remember:
+- Hey, I need some help planning a fairly involved project and I want to walk through it in detail so we're on the same page before I start writing any code.
+- My name is Priya and I'm a data scientist based in Bhavnagar, India.
+- I'm building a churn-prediction model for a retail client using about two years of transaction logs and customer support tickets.
+- My project deadline is August 15th and the budget is $12,000 for compute, tooling, and any third-party services I might need along the way.
+- I also prefer dark mode in any dashboards or internal tools we set up, since I'll be staring at this stuff for hours at a time during the sprint.
+Topics discussed: Hey, I need some help planning...; My name is Priya and I'm...; Good question. For us it's defined...; Line-item level, so I can roll...; Leaning toward XGBoost first as a...
